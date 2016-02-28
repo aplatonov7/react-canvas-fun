@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+body {
+  padding-top: 50px;
+}
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-primary;
+  box-shadow: $shadow-depth-1;
+  height: 50px;
+  line-height: 50px;
+  z-index: 10;
+  padding: 0 40px;
+}
+
+.site-nav__element {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.site-nav__link {
+  padding: 0 2em;
+  color: $text-light;
+  font-size: 18px;
+  display: block;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+  text-decoration: none;
+
+  &:hover,
+  &.active {
+    background-color: $color-primary-dark;
+  }
+}

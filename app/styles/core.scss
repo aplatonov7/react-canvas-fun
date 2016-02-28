@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+html, body {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+#app {
+  height: 100%;
+}
+
+.container {
+  max-width: $screen-lg-min;
+  margin: 0 auto;
+  padding: 1em 0;
+}

@@ -1,0 +1,38 @@
+/*
+ * Scaffolding
+ * -------------------------------------------------------------------------- */
+
+$body-bg: #fff;
+
+/*
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+$font-family-base: 'Roboto', 'Helvetica', sans-serif;
+
+/*
+ * Media queries breakpoints
+ * -------------------------------------------------------------------------- */
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+/*
+ * Palette
+ * -------------------------------------------------------------------------- */
+$color-primary-light: #c5cae9;
+$color-primary: #3f51b5;
+$color-primary-dark: #303f9f;
+
+$color-accent-light: #ff80ab;
+$color-accent-dark: #f50057;
+
+$text-light: #fff;
+$text-dark: #222;
+
+/*
+ * Shadows
+ * -------------------------------------------------------------------------- */
+$shadow-depth-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-depth-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
