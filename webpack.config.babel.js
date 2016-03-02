@@ -2,12 +2,19 @@ import path from 'path';
 import webpack from 'webpack';
 import precss from 'precss';
 import autoprefixer from 'autoprefixer';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const TARGET = process.env.npm_lifecycle_event;
 const PATHS = {
     app: path.join(__dirname, 'app'),
     build: path.join(__dirname, 'build')
 };
+
+const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+    template: __dirname + '/app/index.html',
+    filename: 'index.html',
+    inject: 'body'
+});
 
 process.env.BABEL_ENV = TARGET;
 
@@ -38,7 +45,8 @@ const common = {
     },
     postcss: function () {
         return [autoprefixer, precss];
-    }
+    },
+    plugins: [HTMLWebpackPluginConfig]
 };
 
 let config = {};
@@ -72,19 +80,14 @@ if(TARGET === 'start' || !TARGET) {
                 host: process.env.HOST,
                 port: process.env.PORT
             },
-            plugins: [
-                new webpack.HotModuleReplacementPlugin()
-            ]
+            plugins: [new webpack.HotModuleReplacementPlugin()].concat(common.plugins)
         }
     }
 }
 
 if(TARGET === 'build') {
     config = {
-        ...common,
-        ...{
-
-        }
+        ...common
     };
 }
 
