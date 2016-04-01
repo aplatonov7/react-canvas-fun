@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
-import './SimplePaint.scss';
+import './styles.scss';
 
 class SimplePaint extends Component {
   static propTypes = {};

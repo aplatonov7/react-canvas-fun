@@ -1,5 +1,5 @@
 import React, {Component}  from 'react'
-import SimplePaint from '../../components/SimplePaint/SimplePaint';
+import SimplePaint from '../../components/SimplePaint';
 
 export class PaintView extends Component {
   render() {

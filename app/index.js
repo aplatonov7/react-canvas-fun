@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Redirect, Router, Route, browserHistory } from 'react-router';
 
-import CoreLayout from './layouts/CoreLayout/CoreLayout';
-import HomeView from './views/HomeView/HomeView';
-import PaintView from './views/PaintView/PaintView';
-import LifeView from './views/LifeView/LifeView';
+import CoreLayout from './layouts/CoreLayout';
+import HomeView from './views/HomeView';
+import PaintView from './views/PaintView';
+import LifeView from './views/LifeView';
 
 ReactDOM.render(
     <Router history={browserHistory}>

@@ -1,7 +1,7 @@
 import '../../styles/core.scss';
-import './CoreLayout.scss';
+import './styles.scss';
 import React, { PropTypes } from 'react';
-import Nav from '../../components/Nav/Nav';
+import Nav from '../../components/Nav';
 
 function CoreLayout ({ children }) {
     return (
