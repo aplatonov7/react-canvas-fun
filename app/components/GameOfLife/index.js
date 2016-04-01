@@ -32,10 +32,6 @@ class GameOfLife extends Component {
     this.init(canvas);
   }
 
-  componentWillUnmount() {
-    console.log('oops');
-  }
-
   init(canvas) {
     let universe = [];
     let {width, height} = canvas;
